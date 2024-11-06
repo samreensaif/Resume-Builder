@@ -95,7 +95,7 @@ input,textarea{
     border:none;
     outline: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color:darkblue;
+    color:#222E50;
 }
 
 input:focus,
@@ -172,6 +172,10 @@ textarea:focus {
     }
     legend{
         text-align: left;
+    }
+
+    input,textarea{
+        font-size: 1rem;
     }
 }
 
