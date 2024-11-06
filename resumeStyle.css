@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: white;
+    color:#222E50;
+}
+
+
+
+/* Header Styling */
+.header {
+    background-color: powderblue;
+    color:#222E50;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+}
+
+.header h2 {
+    font-size: 35px;
+    font-family: "SUSE", system-ui;
+}
+
+
+
+.btnDiv{
+    display: flex;
+    
+    width: 100%;
+
+}
+
+.btn-container{
+    display:flex;
+}
+.btn-container  #printBtn, .btn-container #editBtn {
+
+    width:50%;
+    
+}
+
+.share-container{
+    display:flex;
+    gap:10px;
+}
+
+  #anchor{
+    
+    width:100%;
+  }
+  #copyLinkBtn{
+    
+    width:100%;
+  }
+  #shareBtn{
+    
+    width:100%;
+  } 
+
+
+
+.btn {
+    font-size: medium;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:  white;
+    color: #222E50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color:powderblue;
+    color:#222E50;
+
+  }
+
+
+#cv-main {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: powderblue;
+    padding: 20px;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    border-bottom: 2px solid #222E50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+p {
+    margin: 0;
+    padding: 5px 10px;
+    
+}
+
+.font-bold {
+    font-weight: bold;
+    font-size:17px;
+   
+}
+
+.font-noBold{
+    font-weight: normal;
+    padding-left: 10px;
+    
+}
+
+
+#cv-image-container {
+    border: 2px solid #222E50;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    
+    margin-top:65px;
+    margin-right: 50px;
+    border-radius: 5px;
+    
+}
+
+#cv-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#achievements  ul li, #skills ul li{
+    list-style-type: none;
+    padding: 5px 10px;
+    font-size:18px;
+}
+
+
+.footer {
+    background-color: powderblue;
+    width: 100%;
+    text-align: center;
+    height: 80px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a {
+    color:#222E50; 
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header{
+        margin-bottom: 0;
+    }
+
+    #cv-main{
+        margin-top: 0;
+    }
+
+    #cv-main {
+        page-break-inside: avoid;
+    }
+
+    /* Keep the float for the image, it should print in the correct position */
+    #cv-image-container {
+        float: right;
+        margin-top: 55px;
+        margin-right: 50px;
+    }
+
+    #cv-image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hide all buttons in print */
+   
+    .btn {
+        display:none;
+      }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header,.footer{
+        height:70px;
+    }
+
+    .header h2 {
+        padding:10px;
+    }
+    .footer a{
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .footer p{
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .font-bold {
+        font-weight: bold;
+        font-size:15px;
+        text-align: left;
+       display:none;
+    }
+    
+    .header h2 {
+        font-size: 25px;
+    }
+    h3 {
+        border-bottom: 2px solid #222E50;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #cv-image-container{
+        margin-left:30px;
+        margin-bottom:30px;
+    }
+
+    .btn{
+        padding: 5px 5px;
+        margin: 5px 5px;
+    }
+}

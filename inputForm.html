@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-Builder</title>
+    <link rel="stylesheet" href="inputForm.css">
+    <link rel="icon" href="whatsappAvatar.webp">
+</head>
+<body>
+
+
+    <header class="header">
+        <h2>Fill in Your Details</h2>
+    </header>
+
+    <main class="form-main">
+    
+        <form id="form">
+            <!-- Personal Information -->
+        <fieldset >
+            <legend>Personal Information</legend>
+
+
+
+        <!-- Name -->
+        <div class="form-group">
+            <label  for="name">Full Name:</label>
+            <input  type="text" id="name"  required  placeholder="Enter your name">
+        </div>
+        
+
+        <!-- Email -->
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email"  required  placeholder="Enter your email">
+        </div>
+        <!-- phone number -->
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone"  required  placeholder="Enter your phone number">
+        </div>
+
+        <!-- Address -->
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address"  required  placeholder="Enter your complete address">
+        </div>
+
+        </fieldset>
+
+        <!-- Educational Details -->
+        <fieldset>
+            <legend>Education</legend>
+            <div class="form-group">
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" 
+                    placeholder="Enter your degree (e.g., B.Sc. Computer Science)">
+            </div>
+            <div class="form-group">
+                <label for="institution">Institution Name:</label>
+                <input type="text" id="institution"  placeholder="Enter institution name">
+            </div>
+            <div class="form-group">
+                <label for="graduation-year">Year of Graduation:</label>
+                <input type="date" id="graduation-year"  placeholder="Enter graduation year">
+            </div>
+        </fieldset>
+
+        <!-- Work Experience -->
+
+        <fieldset>
+            <legend>Work Experience</legend>
+            <div class="form-group">
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle"  placeholder="Enter your job title">
+            </div>
+            <div class="form-group">
+                <label for="company">Company Name:</label>
+                <input type="text" id="company"  placeholder="Enter company name">
+            </div>
+            <div class="form-group">
+                <label for="work-duration-from">Duration(From):</label>
+                <input type="date" id="work-duration-from" 
+                    placeholder="Enter duration (e.g., Jan 2020 - Dec 2022)">
+            </div>
+            <div class="form-group">
+                <label for="work-duration-to">Duration(To):</label>
+                <input type="date" id="work-duration-to" 
+                    placeholder="Enter duration (e.g., Jan 2020 - Dec 2022)">
+            </div>
+            <div class="form-group">
+                <label for="job-description">Job Description:</label>
+                <textarea id="job-description"  rows="4"
+                    placeholder="Briefly describe your job responsibilities"></textarea>
+            </div>
+        </fieldset>
+
+
+        <!-- Achievements -->
+
+        <fieldset >
+            <legend>Achievements</legend>
+            <div class="form-group">
+                <label for="ach1">Achievement-1:</label>
+                <input class="mb-20"type="text" id="ach1" >
+                <label for="ach2">Achievement-2:</label>
+                <input class="mb-20"type="text" id="ach2" >
+                <label for="ach3">Achievement-3:</label>
+                <input class="mb-20"type="text" id="ach3" > 
+            </div>
+        </fieldset>
+
+        <!-- Skills -->
+
+        <fieldset >
+            <legend>Skills</legend>
+            <div class="form-group">
+                  
+                <label for="skill1">Skill-1:</label> 
+                <input class="mb-20"type="text" id="skill1" >
+                <label for="skill2">Skill-2:</label> 
+                <input class="mb-20"type="text" id="skill2" >
+                <label for="skill3">Skill-3:</label> 
+                <input class="mb-20"type="text" id="skill3" >
+            </div>
+        </fieldset>
+
+        <!-- Image Upload -->
+
+        <fieldset >
+            <legend >Picture</legend>
+            <div class="form-group">
+                <label for="pic">Upload Picture</label>
+                <input type="file" id="pic" accept="image/*">
+            </div>
+        </fieldset>
+
+
+        <!-- Submit -->
+        <div class="btnDiv">
+        <input class="submit" id="submitBtn" type="submit" value="Submit">
+        </div>
+
+
+    </form>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Developed and Designed by <a href="https://github.com/samreensaif"
+                    target="_blank" class="link">Samreen Saif</a></p>
+            <p>&copy; All Rights Reserved by Samreen Saif</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

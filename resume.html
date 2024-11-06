@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-Builder</title>
+    <link rel="stylesheet" href="resumeStyle.css">
+    <link rel="icon" href="whatsappAvatar.webp">
+    
+</head>
+
+<body>
+    
+
+    <header class="header">
+        <h2 >Curriculum Vitae</h2>
+    </header>
+
+    <main id="cv-main">
+        <section>
+            <div id="cv-image-container">
+                <img src=""id="cv-image" alt="Uploaded Picture" />
+            </div>
+        </section>
+        <section id="personal-info">
+            <h3>Personal Information:</h3>
+            <p class="font-bold">Name:<span class="font-noBold" id="cv-name"></span></p>
+            <p class="font-bold">Email:<span class="font-noBold" id="cv-email"></span></p>
+            <p class="font-bold">Phone:<span class="font-noBold" id="cv-phone" ></span></p>
+            <p class="font-bold">Address:<span class="font-noBold" id="cv-address"></span></p>
+        </section>
+
+        <section id="education">
+            <h3>Education:</h3>
+            <p class="font-bold">Degree:<span class="font-noBold" id="cv-degree"></span></p>
+            <p class="font-bold">Institution:<span class="font-noBold" id="cv-institution"></span></p>
+            <p class="font-bold">Graduation Year:<span class="font-noBold" id="cv-graduation-year"></span></p>
+        </section>
+
+        <section id="work-experience">
+            <h3>Work Experience:</h3>
+            <p class="font-bold">Job-Title:<span class="font-noBold" id="cv-job-title"></span></p>
+            <p class="font-bold">Company:<span class="font-noBold" id="cv-company"></span></p>
+            <p class="font-bold">Work-Duration:<span class="font-noBold" id="cv-work-duration"></span></p>
+            <p class="font-bold">Job-Description:<span class="font-noBold" id="cv-job-description"></span></p>
+        </section>
+
+        
+        <section id="achievements">
+            <h3>Achievements:</h3>
+            <ul>
+                <li ><span id="cv-ach1"></span></li>
+                <li ><span id="cv-ach2"></span></li>
+                <li ><span id="cv-ach3"></span></li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h3>Skills:</h3>
+            <ul>
+                <li ><span id="cv-skill1"></span></li>
+                <li ><span id="cv-skill2"></span></li>
+                <li ><span id="cv-skill3"></span></li>
+            </ul>
+        </section>
+        
+        
+        <div id="btnDiv">
+            <div class="share-container">
+              <a href="#" id="anchor"><button id="shareBtn" class="btn">Shareable Link</button></a>  
+              <button class="btn" id="copyLinkBtn">Copy Link</button>
+            </div>
+            <div class="btn-container">
+                <button class="btn" id="printBtn">Print</button>
+                <button class="btn" id="editBtn">Edit</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Developed and Designed by <a href="https://github.com/samreensaif"
+                    target="_blank" class="link">Samreen Saif</a></p>
+            <p>&copy; All Rights Reserved by Samreen Saif</p>
+        </div>
+    </footer>
+    
+    <script src="resumeScript.js"></script>
+</body>
+
+</html>
