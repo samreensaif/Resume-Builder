@@ -76,7 +76,7 @@ if (resName) {
 else {
     userName = "user";
 }
-let baseUrl = "http://127.0.0.1:5500/resume.html";
+let baseUrl = "http://resume-builder-f.vercel.app/resume.html";
 let uniqueUrl = `${baseUrl}?/${userName}`;
 shareBtn?.addEventListener("click", () => {
     anchor.setAttribute("href", uniqueUrl); // set href = uniqueUrl;
